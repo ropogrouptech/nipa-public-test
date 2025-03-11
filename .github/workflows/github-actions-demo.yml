@@ -11,7 +11,7 @@ jobs:
 
       - name: Write secret to file
         run: |
-          echo "${{ secrets.NIILONSECRET }}" > secret.txt
+          echo "${{ secrets.NIILO_PUBLIC_SECRET }}" > secret.txt
         shell: bash
 
       - name: Verify file (hidden in logs)
